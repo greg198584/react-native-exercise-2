@@ -43,7 +43,7 @@ Dans cet exercice, nous allons introduire les concepts de `State` et `Props` en 
 
 ### Les Props
 
-2. **Introduction aux props**
+1. **Introduction aux props**
 
    Créons maintenant un nouveau composant `ProfileButton` qui prendra un prop `onPress`.
 
@@ -51,8 +51,9 @@ Dans cet exercice, nous allons introduire les concepts de `State` et `Props` en 
    > $ mkdir components
    > $ cd components && touch ProfileButton.js
    ```
-3. 
    
+   ProfilButton.js:
+
    ```jsx
    import React from 'react';
    import { Button } from 'react-native';
@@ -64,7 +65,7 @@ Dans cet exercice, nous allons introduire les concepts de `State` et `Props` en 
    export default ProfileButton;
    ```
 
-   Ensuite, ajoutez `ProfileButton` à votre `HomeScreen` et passez une fonction au prop `onPress`.
+2. Ensuite, ajoutez `ProfileButton` à votre `HomeScreen` et passez une fonction au prop `onPress`.
 
    ```jsx
    import ProfileButton from '../components/ProfileButton';
@@ -86,7 +87,7 @@ Dans cet exercice, nous allons introduire les concepts de `State` et `Props` en 
    Ici, nous avons passé une fonction qui navigue vers le `ProfileScreen` lorsque le bouton est pressé.
 
 
-4. **Testez votre application.**
+3. **Testez votre application.**
 
    Lancez votre application et vous devriez être capable de naviguer vers l'écran de profil en appuyant sur le bouton "Voir le profil".
 
