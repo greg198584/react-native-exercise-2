@@ -12,7 +12,26 @@ Dans cet exercice, nous allons introduire les concepts de `State` et `Props` en 
 
 1. **Ajout d'un State à l'écran d'accueil**
 
-   Nous allons d'abord ajouter un state dans notre écran d'accueil `HomeScreen`. Ce state nous permettra de compter le nombre de fois que l'utilisateur a visité cette page.
+Dans React (et donc React Native), un state est une sorte de donnée qui peut être modifiée au fil du temps et qui peut affecter le rendu du composant. C'est l'une des façons de gérer les données dynamiques dans un composant.
+
+La fonction `useState` est un hook de React qui vous permet de déclarer un state dans votre composant. 
+C'est une fonction qui prend un argument, qui est la valeur initiale de votre state, et renvoie un tableau de deux éléments.
+
+Dans `const [count, setCount] = useState(0);`, l'argument de `useState` est `0`, ce qui signifie que `count` aura une valeur initiale de `0`.
+
+Le tableau renvoyé par `useState` contient deux éléments :
+- Le premier est la valeur actuelle du state (`count` dans cet exemple).
+- Le deuxième est une fonction qui permet de modifier ce state (`setCount` dans cet exemple).
+
+Voici comment cela fonctionne :
+
+1. `count` est la valeur actuelle du state. Vous pouvez l'utiliser dans votre code JSX pour afficher la valeur actuelle.
+
+2. `setCount` est une fonction qui vous permet de changer la valeur de `count`. Par exemple, si vous voulez augmenter `count` de 1, vous pouvez appeler `setCount(count + 1)`.
+
+C'est une façon de gérer les données locales à un composant. Chaque fois que le state est modifié (par exemple via `setCount`), le composant sera re-rendu avec la nouvelle valeur.
+
+Nous allons d'abord ajouter un state dans notre écran d'accueil `HomeScreen`. Ce state nous permettra de compter le nombre de fois que l'utilisateur a visité cette page.
 
    Ajoutez le code suivant dans `HomeScreen` :
 
