@@ -91,6 +91,23 @@ Dans cet exercice, nous allons introduire les concepts de `State` et `Props` en 
 
    Lancez votre application et vous devriez être capable de naviguer vers l'écran de profil en appuyant sur le bouton "Voir le profil".
 
+
+   Dans React Navigation, l'objet `navigation` est un prop qui est transmis à tous les écrans qui sont dans un navigateur. Il contient diverses méthodes et informations qui permettent de naviguer entre les différents écrans.
+
+   Dans ce cas précis, `{ navigation }` est une déstructuration de l'objet `props`. 
+   
+   Cela signifie que nous extrayons directement la propriété `navigation` de l'objet `props` qui est transmis à `HomeScreen`.
+
+   Voici quelques méthodes utiles disponibles dans l'objet `navigation` :
+
+- `navigation.navigate('RouteName')` : Cette méthode permet de naviguer vers une route spécifique dans le navigateur. Dans notre cas, nous utilisons cette méthode pour naviguer vers l'écran 'Profile'.
+
+- `navigation.goBack()` : Cette méthode permet de revenir à l'écran précédent dans la pile de navigation.
+
+- `navigation.push('RouteName')` : Cette méthode permet d'ajouter une nouvelle route à la pile de navigation, même si cette route est déjà dans la pile.
+
+- `navigation.popToTop()` : Cette méthode permet de revenir à la première route de la pile de navigation, en supprimant toutes les autres routes.
+
 ## Exercice 5 : Introduction au Contexte en React Native
 
 ### Objectif
